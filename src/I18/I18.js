@@ -26,7 +26,7 @@ i18n
             escapeValue: false, // React تقوم بالهروب تلقائيًا
         },
         backend: {
-            loadPath: '/Langs/{{lng}}.json',
+            // loadPath: '/Langs/{{lng}}.json',
         },
     });
 
