@@ -9,7 +9,13 @@ import {
     yellowImg,
 } from "../utils";
 
-export const navLists = ["Store", "Mac", "IPhone", "Support"];
+// export const navLists = ["Store", "Mac", "IPhone", "Support"];
+export const navLists = [
+    "nav.store",
+    "nav.mac",
+    "nav.iphone",
+    "nav.support"
+];
 
 export const hightlightsSlides = [
     {
@@ -78,10 +84,18 @@ export const sizes = [
     { label: '6.7"', value: "large" },
 ];
 
+// export const footerLinks = [
+    // "Privacy Policy",
+    // "Terms of Use",
+    // "Sales Policy",
+    // "Legal",
+    // "Site Map",
+// ];
+
 export const footerLinks = [
-    "Privacy Policy",
-    "Terms of Use",
-    "Sales Policy",
-    "Legal",
-    "Site Map",
+    "footer.privacy",
+    "footer.terms",
+    "footer.sales",
+    "footer.legal",
+    "footer.sitemap",
 ];

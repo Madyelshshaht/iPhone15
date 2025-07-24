@@ -3,13 +3,16 @@ import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { animateWithGsap } from "../../utils/animations";
 import { explore1Img, explore2Img, exploreVideo } from "../../utils";
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
     const videoRef = useRef();
 
+    const { t } = useTranslation();
+
     useGSAP(() => {
         gsap.to('#exploreVideo', {
-            scrollTrigger:{
+            scrollTrigger: {
                 trigger: '#exploreVideo',
                 toggleActions: 'play pause reverse restart',
                 start: "-10% bottom"
@@ -54,15 +57,15 @@ const Features = () => {
             <div className="screen-max-width">
                 <div className="mb-12 w-full">
                     <h1 id="features_title" className="section-heading">
-                        Explore teh full story.
+                        {t("Features.f-title")}
                     </h1>
                 </div>
 
                 <div className="flex flex-col justify-center items-center overflow-hidden">
                     <div className="mt-32 mb-24 sm:text-start text-center">
-                        <h2 className="text-5xl lg:text-7xl font-semibold">Iphone.</h2>
+                        <h2 className="text-5xl lg:text-7xl font-semibold">{t("Features.f-text1")}</h2>
                         <h2 className="text-5xl lg:text-7xl font-semibold">
-                            Forged in titanium.
+                            {t("Features.f-text2")}
                         </h2>
                     </div>
                 </div>
@@ -104,21 +107,21 @@ const Features = () => {
                         <div className="feature-text-container">
                             <div className="flex-center  flex-1">
                                 <p className="feature-text g_text">
-                                    iPhone 15 Pro is {" "}
+                                    {t("Features.f-p1_t1")} {" "}
                                     <span className="text-white">
-                                        the first iphone to feature an aerospace-grade titanium design
+                                        {t("Features.f-p1_t2")}
                                     </span>,
-                                    using the same alloy that spacecrafts use for missions to Mars.
+                                    {t("Features.f-p1_t3")}
                                 </p>
                             </div>
 
                             <div className="flex-center flex-1">
                                 <p className="feature-text g_text">
-                                    Titanuim has one of the best strength-to-weight ratios of any metal, making these our {" "}
+                                    {t("Features.f-p2_t1")} {" "}
                                     <span className="text-white">
-                                        lightest Pro models ever.
+                                        {t("Features.f-p2_t2")}
                                     </span>,
-                                    you will notice the difference the moment you pick one up.
+                                    {t("Features.f-p2_t3")}
                                 </p>
                             </div>
 

@@ -3,9 +3,12 @@ import { chipImg, frameImg, frameVideo } from '../../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { animateWithGsap } from '../../utils/animations'
+import { useTranslation } from 'react-i18next'
 
 const HowItWork = () => {
     const videoRef = useRef()
+
+    const { t } = useTranslation();
 
     useGSAP(() => {
         gsap.from('#chip',
@@ -33,12 +36,13 @@ const HowItWork = () => {
 
                 <div className='flex flex-col items-center'>
                     <h2 className='hiw-title'>
-                        A17 Pro chip.
-                        <br />A monster win for gaming.
+                        {t("htw.hrw-t1")}
+                        <br />
+                        {t("htw.hrw-t2")}
                     </h2>
 
                     <p className='hiw-subtitle'>
-                        It's here. The biggest redesign in the history of Apple GPUs.
+                        {t("htw.hrw-t3")}
                     </p>
                 </div>
 
@@ -57,33 +61,33 @@ const HowItWork = () => {
                             </video>
                         </div>
                     </div>
-                    <p className="text-gray font-semibold text-center mt-3">Honkai: Star Rail</p>
+                    <p className="text-gray font-semibold text-center mt-3">{t("htw.hrw-t4")}</p>
                 </div>
 
                 <div className="hiw-text-container">
 
                     <div className="flex flex-1 justify-center flex-col">
                         <p className="hiw-text g_fadeIn">
-                            A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
+                            {t("htw.hrw-t5")} {' '}
                             <span className="text-white">
-                                best graphic performance by far
+                                {t("htw.hrw-t6")}
                             </span>.
                         </p>
 
                         <p className="hiw-text g_fadeIn">
-                            Mobile {' '}
+                            {t("htw.hrw-t7")} {' '}
                             <span className="text-white">
-                                games will look and feel so immersive
+                                {t("htw.hrw-t8")}
                             </span>,
-                            with incredibly detailed environments and characters.
+                            {t("htw.hrw-t9")}
                         </p>
                     </div>
 
 
                     <div className="flex-1 flex justify-center flex-col g_fadeIn">
-                        <p className="hiw-text">New</p>
-                        <p className="hiw-bigtext">Pro-class GPU</p>
-                        <p className="hiw-text">with 6 cores</p>
+                        <p className="hiw-text">{t("htw.hrw-t10")}</p>
+                        <p className="hiw-bigtext">{t("htw.hrw-t11")}</p>
+                        <p className="hiw-text">{t("htw.hrw-t12")}</p>
                     </div>
 
                 </div>

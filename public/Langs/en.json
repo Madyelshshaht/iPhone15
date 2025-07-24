@@ -1,0 +1,62 @@
+{
+    "nav": {
+        "store": "Store",
+        "mac": "Mac",
+        "iphone": "iPhone",
+        "support": "Support"
+    },
+    "h-title": "Iphone 15 Pro",
+    "h-btn": "Buy",
+    "h-price": "From $199 / month or $999",
+    "highlights": {
+        "hi-title": "Get the highlights.",
+        "hi-link1": "Watch the film",
+        "hi-link2": "Watch the event"
+    },
+    "ms-title": "Take a closer look",
+    "models": {
+        "1": "iPhone 15 Pro in Natural Titanium",
+        "2": "iPhone 15 Pro in Blue Titanium",
+        "3": "iPhone 15 Pro in White Titanium",
+        "4": "iPhone 15 Pro in Black Titanium"
+    },
+    "Features": {
+        "f-title": "Explore teh full story.",
+        "f-text1": "Iphone.",
+        "f-text2": "Forged in titanium.",
+        "f-p1_t1": "iPhone 15 Pro is",
+        "f-p1_t2": "the first iphone to feature an aerospace-grade titanium design",
+        "f-p1_t3": "using the same alloy that spacecrafts use for missions to Mars.",
+        "f-p2_t1": "Titanuim has one of the best strength-to-weight ratios of any metal, making these our",
+        "f-p2_t2": "lightest Pro models ever.",
+        "f-p2_t3": "you will notice the difference the moment you pick one up."
+    },
+    "htw": {
+        "hrw-t1": "A17 Pro chip.",
+        "hrw-t2": "A monster win for gaming.",
+        "hrw-t3": "It's here. The biggest redesign in the history of Apple GPUs.",
+        "hrw-t4": "Honkai: Star Rail",
+        "hrw-t5": "A17 Pro is an entirely new class of iPhone chip that delivers our",
+        "hrw-t6": " best graphic performance by far",
+        "hrw-t7": " Mobile",
+        "hrw-t8": " games will look and feel so immersive",
+        "hrw-t9": " with incredibly detailed environments and characters.",
+        "hrw-t10": "New",
+        "hrw-t11": "Pro-class GPU",
+        "hrw-t12": "with 6 cores"
+    },
+    "footer": {
+        "f-t1": "More ways to shop:",
+        "f-t2": "Find an Apple Store",
+        "f-t3": "other retailer",
+        "f-t4": "near you",
+        "f-t5": "Or call 000800-040-1966",
+        "f-t6": "Copright @ 2024 Apple Inc. All rights reserved by",
+        "f-t7": "Mady Elshahat",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "sales": "Sales Policy",
+        "legal": "Legal",
+        "sitemap": "Site Map"
+    }
+}

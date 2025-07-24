@@ -27,10 +27,12 @@ const VidoeCarousel = () => {
 
     const { isEnd, startPlay, videoId, isLastVideo, isplaying } = video; // Destrucure to dont use video.{isEnd ,startPlay } in the code like this
 
+    const lang = localStorage.getItem('i18nextLng')
+
     useGSAP(() => {
 
         gsap.to('#slider', {
-            transform: `translateX(${-100 * videoId}%)`,
+            transform: `translateX(${lang === "en" ? -100 * videoId : 100 * videoId}%)`,
             duration: 2,
             ease: "power2.inOut",
         })
@@ -210,7 +212,7 @@ const VidoeCarousel = () => {
                 ))}
             </div>
 
-            <div className="relative flex-center mt-10">
+            <div className="relative flex-center mt-10 gap-5">
                 <div className="flex-center py-5 px-7 bg-zinc-800 backdrop-blur rounded-full">
                     {videoRef.current.map((_, i) => (
                         <span

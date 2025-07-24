@@ -1,20 +1,22 @@
 import React from "react";
 import { footerLinks } from "../../constants";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer className="py-5 sm:px-10 px-5">
             <div className="screen-max-width">
                 <div>
                     <p className="font-semibold text-gray-300 text-xs">
-                        More ways to shop:{" "}
+                        {t("footer.f-t1")} {" "}
                         <span className="underline text-blue-600">
-                            Find an Apple Store{" "}
+                            {t("footer.f-t2")} {" "}
                         </span>
-                        or <span className="underline text-blue-600">other retailer</span>{" "}
-                        near you.
+                        or <span className="underline text-blue-600">{t("footer.f-t3")}</span>{" "}
+                        {t("footer.f-t4")}
                     </p>
                     <p className="font-semibold text-gray-300 text-xs">
-                        Or call 000800-040-1966
+                        {t("footer.f-t5")}
                     </p>
                 </div>
 
@@ -23,22 +25,22 @@ const Footer = () => {
 
                 <div className="flex md:flex-row flex-col md:items-center justify-between">
                     <p className="font-semibold text-gray-300 text-xs">
-                        Copright @ 2024 Apple Inc. All rights reserved by{" "}
+                        {t("footer.f-t6")} {" "}
                         <a
                             href="https://madyelshshaht.github.io/Mohamed-Elshahat/"
                             target="_blank"
                             className="underline text-blue-600"
                         >
-                            Mady
+                            {t("footer.f-t7")}
                         </a> {" "}
                         .
                     </p>
-                    <div className="flex">
+                    <div className="flex flex-wrap gap-3 sm:mt-0 mt-3">
                         {footerLinks.map((link, i) => (
-                            <p key={link} className="font-semibold text-gray-300 text-xs">
-                                {link}{" "}
+                            <p key={link} className="sm:font-semibold text-gray-300 text-xs ">
+                                {t(link)} {" "}
                                 {i !== footerLinks.length - 1 && (
-                                    <span className="mx-2"> | </span>
+                                    <span className="mx-2 max-sm:hidden "> | </span>
                                 )}
                             </p>
                         ))}

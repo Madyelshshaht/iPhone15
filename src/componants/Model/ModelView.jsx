@@ -33,7 +33,7 @@ const ModelView = ({
             {/* Ambient Light */}
             {/* ✅ يضيف إضاءة عامة للمشهد، تجعل كل الأجسام مضيئة قليلًا بشكل متساوي.*/}
             <ambientLight intensity={0.3} />
-            <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+            <PerspectiveCamera makeDefault position={[-1, 0, 4]} />
 
             <Lights />
 
