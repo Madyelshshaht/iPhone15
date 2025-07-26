@@ -11,7 +11,25 @@
     "highlights": {
         "hi-title": "Get the highlights.",
         "hi-link1": "Watch the film",
-        "hi-link2": "Watch the event"
+        "hi-link2": "Watch the event",
+        "1": {
+            "line1": "Enter A17 Pro.",
+            "line2": "Game‑changing chip.",
+            "line3": "Groundbreaking performance."
+        },
+        "2": {
+            "line1": "Titanium.",
+            "line2": "So strong. So light. So Pro."
+        },
+        "3": {
+            "line1": "iPhone 15 Pro Max has the",
+            "line2": "longest optical zoom in",
+            "line3": "iPhone ever. Far out."
+        },
+        "4": {
+            "line1": "All-new Action button.",
+            "line2": "What will yours do?."
+        }
     },
     "ms-title": "Take a closer look",
     "models": {
