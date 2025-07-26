@@ -40,8 +40,8 @@ const Navbar = () => {
                             className="fixed inset-0 sm:hidden bg-black/50 z-40"
                         ></div>
 
-                        <div className={`  z-50 bottom-100 p-5 sm:hidden h-fit  w-[200px] rounded-sm bg-black shadow-lg
-                            shadow-cyan-200 flex flex-col items-center justify-center gap-5 fixed top-15 
+                        <div className={`  z-50 bottom-100 p-5 sm:hidden h-fit  w-[200px] rounded-sm bg-black shadow-sm
+                            shadow-gray-400 flex flex-col items-center justify-center gap-5 fixed top-15 
                         ${lang === 'en'? 'right-2' : 'left-2'}`}>
                             {navLists.map((nav, i) => (
                                 <div

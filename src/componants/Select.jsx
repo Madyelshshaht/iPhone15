@@ -24,6 +24,7 @@ const Select = () => {
         setLang(newLang);
         i18n.changeLanguage(newLang);
         localStorage.setItem("i18nextLng", newLang);
+        window.location.reload();
     };
 
     useEffect(() => {

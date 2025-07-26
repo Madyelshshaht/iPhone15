@@ -20,33 +20,51 @@ export const navLists = [
 export const hightlightsSlides = [
     {
         id: 1,
+        // textLists: [
+        //     "Enter A17 Pro.",
+        //     "Game‑changing chip.",
+        //     "Groundbreaking performance.",
+        // ],
         textLists: [
-            "Enter A17 Pro.",
-            "Game‑changing chip.",
-            "Groundbreaking performance.",
+            "highlights.1.line1",
+            "highlights.1.line2",
+            "highlights.1.line3",
         ],
         video: highlightFirstVideo,
         videoDuration: 4,
     },
     {
         id: 2,
-        textLists: ["Titanium.", "So strong. So light. So Pro."],
+        // textLists: ["Titanium.", "So strong. So light. So Pro."],
+        textLists: [
+            "highlights.2.line1",
+            "highlights.2.line2",
+        ],
         video: highlightSecondVideo,
         videoDuration: 5,
     },
     {
         id: 3,
+        // textLists: [
+        //     "iPhone 15 Pro Max has the",
+        //     "longest optical zoom in",
+        //     "iPhone ever. Far out.",
+        // ],
         textLists: [
-            "iPhone 15 Pro Max has the",
-            "longest optical zoom in",
-            "iPhone ever. Far out.",
+            "highlights.3.line1",
+            "highlights.3.line2",
+            "highlights.3.line3",
         ],
         video: highlightThirdVideo,
         videoDuration: 2,
     },
     {
         id: 4,
-        textLists: ["All-new Action button.", "What will yours do?."],
+        // textLists: ["All-new Action button.", "What will yours do?."],
+        textLists: [
+            "highlights.4.line1",
+            "highlights.4.line2",
+        ],
         video: highlightFourthVideo,
         videoDuration: 3.63,
     },
@@ -85,11 +103,11 @@ export const sizes = [
 ];
 
 // export const footerLinks = [
-    // "Privacy Policy",
-    // "Terms of Use",
-    // "Sales Policy",
-    // "Legal",
-    // "Site Map",
+// "Privacy Policy",
+// "Terms of Use",
+// "Sales Policy",
+// "Legal",
+// "Site Map",
 // ];
 
 export const footerLinks = [

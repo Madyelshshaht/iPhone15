@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 const Highlights = () => {
 
     const { t } = useTranslation();
+    const lang = localStorage.getItem('i18nextLng')
 
 
     useGSAP(() => {
@@ -26,11 +27,11 @@ const Highlights = () => {
                     <div className="flex flex-wrap items-center gap-5">
                         <p className="link gap-1">
                             {t("highlights.hi-link1")}
-                            <img src={watchImg} alt="watch" className="ml-2  max-sm:w-[15px]" />
+                            <img src={watchImg} alt="watch" className={`ml-2  max-sm:w-[15px] transform ${lang === 'ar' ? 'rotate-180' : ''}`} />
                         </p>
-                        <p className="link gap-1">
+                        <p className="link gap-2">
                             {t("highlights.hi-link2")}
-                            <img src={rightImg} alt="right" className="ml-2 max-sm:w-[6px]" />
+                            <img src={rightImg} alt="right" className={`ml-2 max-sm:w-[6px] transform ${lang === 'ar' ? 'rotate-180' : ''} `} />
                         </p>
                     </div>
                 </div>

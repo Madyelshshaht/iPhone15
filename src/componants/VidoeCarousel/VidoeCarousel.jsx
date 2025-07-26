@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { hightlightsSlides } from "../../constants";
 import { pauseImg, playImg, replayImg } from "../../utils";
+import { t } from "i18next";
 
 
 
@@ -173,7 +174,7 @@ const VidoeCarousel = () => {
         <>
             <div className="flex items-center ">
                 {hightlightsSlides.map((slide, i) => (
-                    <div key={i} id="slider" className="sm:pr-20 pr-10 ">
+                    <div key={i} id="slider" className={`sm:pr-20 ${lang === 'en' ? 'pr-10' : 'pr-4'}  `}>
                         <div className="video-carousel_container">
                             <div className="w-full h-full flex-center rounded-3xl overflow-hidden bg-black">
                                 <video
@@ -200,10 +201,10 @@ const VidoeCarousel = () => {
                                 </video>
                             </div>
 
-                            <div className="absolute top-12 left-[5%] z-10">
+                            <div className={`absolute top-12 ${lang === "en" ? 'left-[5%]' : 'right-[5%]'}  z-10`}>
                                 {slide.textLists.map((text, i) => (
                                     <p key={i} className="md:text-2xl text-xl font-medium">
-                                        {text}
+                                        {t(text)}
                                     </p>
                                 ))}
                             </div>
